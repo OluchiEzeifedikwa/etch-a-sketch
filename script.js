@@ -2,24 +2,6 @@
 
 
 
-function clearGrid(size) {
-    const btn = document.querySelector('#btn');
-    btn.addEventListener('click', () => {
-    prompt('What size do you want for the new grid?');
-
-    if(size >= 100) {
-        alert("Number is too large, try again");
-    }  else {
-        alert('number');
-        
-    }
-});
-}
-clearGrid();
-
-
-
-
  
 function createGrid(size) {
     
@@ -45,6 +27,10 @@ createGrid(16);
 
 
 
+const btn = document.querySelector('#btn');
+    btn.addEventListener('click', () => {
+    prompt('What size do you want for the new grid?');
+    });
 
 
 
@@ -55,7 +41,6 @@ rows.forEach((row) => {
 
     row.addEventListener("mouseover", function(e)  {
         e.target.style.background = 'grey';
+    });
 });
-});
-
 
