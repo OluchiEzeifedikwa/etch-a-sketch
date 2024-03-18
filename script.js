@@ -51,7 +51,6 @@ function createGrid(size) {
 }
 })
 }
-    
 createGrid();
 
 
